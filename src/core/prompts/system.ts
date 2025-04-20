@@ -66,10 +66,11 @@ async function generatePrompt(
 
 ${getSharedToolUseSection()}
 
-${getToolDescriptionsForMode(
+${await getToolDescriptionsForMode(
 	mode,
 	cwd,
 	supportsComputerUse,
+	context,
 	effectiveDiffStrategy,
 	browserViewportSize,
 	mcpHub,

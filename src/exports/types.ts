@@ -337,6 +337,7 @@ type GlobalSettings = {
 					  ]
 				)[]
 				source?: ("global" | "project") | undefined
+				enabledForSwitching?: boolean | undefined
 		  }[]
 		| undefined
 	customModePrompts?:
@@ -345,6 +346,7 @@ type GlobalSettings = {
 					| {
 							roleDefinition?: string | undefined
 							customInstructions?: string | undefined
+							enabledForSwitching?: boolean | undefined
 					  }
 					| undefined
 		  }
